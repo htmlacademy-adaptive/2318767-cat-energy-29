@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+//  Базовые стили
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+
+// Миксины и переменные
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Блоки
+@import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/program-card.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/products.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/button.scss";
+@import "./blocks/products-add.scss";
+@import "./blocks/product-add-card.scss";
+@import "./blocks/gift.scss";
+@import "./blocks/form.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/visually-hidden.scss"

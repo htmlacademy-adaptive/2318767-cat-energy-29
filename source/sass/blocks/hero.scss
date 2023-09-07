@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  color: #ffffff;
+  background: url("../img/cat-grey.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 121px;
+    padding-right: 30px;
+    background-image: none;
+    text-align: start;
+    min-height: 810px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 553px;
+    padding-left: 190px;
+  }
+}
+
+.hero__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-top: 17px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+    margin-top: 73px;
+  }
+}
+
+.hero__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 300px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+  }
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 270px;
+  left: 40px;
+  top: 167px;
+  background-image: url("../img/pack-cat-energy.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    left: 100px;
+    top: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    left: 470px;
+    top: 0;
+  }
+}
