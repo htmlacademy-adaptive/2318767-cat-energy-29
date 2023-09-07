@@ -1,0 +1,23 @@
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 129%;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  outline: 2px solid tomato;
+}

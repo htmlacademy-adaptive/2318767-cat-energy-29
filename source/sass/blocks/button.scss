@@ -1,0 +1,17 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #68b738;
+  padding: 10px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+  }
+}

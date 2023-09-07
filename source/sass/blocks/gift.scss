@@ -1,0 +1,23 @@
+.gift {
+  position: relative;
+  background-image: url("../../img/cat-bag.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 290px;
+}
+
+.gift__slogan {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.gift__slogan::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+}

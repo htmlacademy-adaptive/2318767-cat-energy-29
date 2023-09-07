@@ -1,0 +1,72 @@
+.program-card {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 15px 33px 18px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 62px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}
+
+.program-card__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-left: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+  }
+}
+
+.program-card__description {
+  color: #444444;
+  margin-top: 9px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
+.program-card__link {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+
+.program-card__link::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/arrow.svg");
+  width: 32px;
+  height: 10px;
+  top: 6px;
+  right: -50px;
+}
