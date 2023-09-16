@@ -1,15 +1,55 @@
+.product-add-card {
+  padding-top: 7px;
+  padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    display: grid;
+    grid-template-areas:
+      "title feature"
+      "button button";
+    padding: 26px 37px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.product-add-card:last-of-type {
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .product-add-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 100%;
   text-transform: uppercase;
   color: #222222;
+  margin-top: 6px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    grid-area: title;
+  }
 }
 
 .product-add-card__feature {
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 125%;
+    grid-area: feature;
+  }
 }

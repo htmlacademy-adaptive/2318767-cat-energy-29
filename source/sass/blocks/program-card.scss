@@ -13,6 +13,90 @@
   }
 }
 
+.program-card--slim::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/cat-sitting.svg");
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+  left: 29px;
+  top: 20px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    background-size: contain;
+    left: auto;
+    right: 91px;
+    top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    left: 66px;
+    top: 42px;
+  }
+}
+
+.program-card--pro::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/cat-walking.svg");
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+  left: 13px;
+  top: 34px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    background-size: contain;
+    left: auto;
+    right: 27px;
+    top: 134px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    left: 32px;
+    right: 0;
+    top: 68px;
+  }
+}
+
+.program-card::after {
+  position: absolute;
+  content: "";
+  background-color: #68B738;
+  width: 50px;
+  height: 50px;
+  top: 23px;
+  left: 22px;
+  z-index: 1;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: 62px;
+    top: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 52px;
+    top: 48px;
+  }
+}
+
 .program-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -23,28 +107,40 @@
   color: #000000;
   margin-top: 15px;
   margin-bottom: 20px;
-  padding-left: 90px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
+    margin-bottom: 70px;
   }
 }
 
 .program-card__description {
   color: #444444;
-  margin-top: 9px;
-  margin-bottom: 30px;
+  padding-top: 9px;
+  padding-bottom: 22px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 57%;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 6px;
+    border-bottom: none;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding-bottom: 0;
+    margin-bottom: 27px;
   }
 }
 
@@ -59,6 +155,11 @@
   color: #000000;
   margin-top: 8px;
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-card__link::after {
@@ -69,4 +170,9 @@
   height: 10px;
   top: 6px;
   right: -50px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    right: -58px;
+  }
 }

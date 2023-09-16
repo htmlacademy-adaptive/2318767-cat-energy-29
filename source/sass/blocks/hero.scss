@@ -1,23 +1,49 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background: url("../img/cat-grey.jpg");
+  background-image: url("../img/cat-mobile.jpg"), linear-gradient(#07b607 80%, #ffffff 20%);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
   padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-mobile@2x.jpg"), linear-gradient(#68b738 60%, #ffffff 40%);
+    background-size: 100%;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-left: 121px;
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 75px;
     background-image: none;
     text-align: start;
     min-height: 810px;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 553px;
     padding-left: 190px;
+    padding-bottom: 262px;
+    min-height: auto;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero::after {
+    position: absolute;
+    content: "";
+    width: 720px;
+    height: 694px;
+    background-image: url("../img/cat-desktop.jpg"), linear-gradient(#68b738 80%, #ffffff 20%);
+    background-repeat: no-repeat;
+    top: -172px;
+    right: 0;
+    z-index: -2;
   }
 }
 
@@ -35,12 +61,14 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    margin-top: 30px;
     margin-bottom: 40px;
+    margin-left: -2px;
   }
 
   @media (min-width: $desktop-width) {
     width: 40%;
-    margin-top: 73px;
+    margin-top: 22px;
   }
 }
 
@@ -53,13 +81,13 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 5px;
-  margin-bottom: 300px;
+  margin-bottom: 302px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 49px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,28 +95,49 @@
   }
 }
 
-.hero::after {
+.hero::before {
   position: absolute;
   content: "";
   width: 280px;
   height: 270px;
-  left: 40px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   top: 167px;
-  background-image: url("../img/pack-cat-energy.png");
+  background-image: url("../img/pack-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/pack-mobile@2x.png");
+    background-size: 100%;
+  }
+
   @media (min-width: $tablet-width) {
+    background-image: url("../img/pack-tablet.png");
     width: 709px;
     height: 609px;
-    left: 100px;
-    top: 200px;
+    left: 0;
+    top: 260px;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/pack-tablet@2x.png");
+    background-size: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/pack-desktop.png");
     width: 552px;
     height: 499px;
-    left: 470px;
-    top: 0;
+    left: 228px;
+    top: -30px;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/pack-desktop@2x.png");
+    background-size: 100%;
+    }
 }
