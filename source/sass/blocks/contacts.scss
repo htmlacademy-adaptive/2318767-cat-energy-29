@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     column-gap: 296px;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .contacts__header {
@@ -15,7 +19,8 @@
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 30px 56px;
+    padding: 56px 70px 63px;
+    gap: 296px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +67,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: flex-end;
   }
 }
 

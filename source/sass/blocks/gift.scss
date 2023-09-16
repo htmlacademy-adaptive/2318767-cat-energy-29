@@ -1,23 +1,73 @@
 .gift {
   position: relative;
-  background-image: url("../../img/cat-bag.jpg");
+  background-image: url("../img/cat-bag-mobile.jpg");
+  background-color: rgb(172, 164, 164);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 290px;
+  background-position: center;
+  margin-top: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-bag-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cat-bag-tablet.jpg");
+    margin-top: 69px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bag-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cat-bag-desktop.jpg");
+    grid-column: 2 / 3;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bag-desktop@2x.jpg");
+    }
+  }
 }
 
 .gift__slogan {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin-top: 0;
+  padding-top: 186px;
+  padding-bottom: 43px;
+  text-align: center;
+  padding-left: 59px;
+  padding-right: 59px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 422px;
+    padding-top: 71px;
+    padding-bottom: 69px;
+    padding-left: 0;
+    padding-right: 124px;
+    text-align: start;
+  }
 }
 
-.gift__slogan::after {
+.gift::before {
   position: absolute;
-  content: " ";
-  top: 0;
+  content: "";
+  background-image: url("../img/gift.svg");
+  width: 78px;
+  height: 80px;
+  top: 58px;
   left: 0;
-  width: 100%;
-  height: 290px;
-  background-color: rgba(104, 183, 56, 0.85);
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 480px;
+  }
 }

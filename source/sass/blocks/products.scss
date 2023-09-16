@@ -1,8 +1,42 @@
+.products {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 141px;
+    column-gap: 60px;
+    padding: 20px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 110px 25px;
+    column-gap: 80px;
+    row-gap: 143px;
+  }
+}
+
 .products__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 100%;
   color: #000000;
+  margin: 0;
+  padding: 27px 20px 41px;
+
+  @media (max-width: 767px) {
+    border-top: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+    margin-bottom: 22px;
+    font-size: 60px;
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
