@@ -17,6 +17,11 @@
   grid-template-columns: 1fr 1fr;
   align-content: center;
   padding: 26px 20px;
+  background-color: #f2f2f2;
+
+  &--index {
+    background-color: #ffffff;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px 63px;
@@ -79,4 +84,12 @@
   display: block;
   background-color: #77f4b6;
   width: 100%;
+}
+
+.contacts::after {
+  position: absolute;
+  content: "";
+  width: 57px;
+  height: 53px;
+  background-image: url("../img/sprite.svg#map-pin");
 }

@@ -22,3 +22,22 @@
   background-color: #f2f2f2;
   color: #444444;
 }
+
+.button--catalog {
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button--form {
+  padding: 9px;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+
+  @media(min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+  }
+}
