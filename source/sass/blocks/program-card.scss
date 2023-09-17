@@ -158,23 +158,40 @@
   margin-top: 8px;
   margin-bottom: 18px;
 
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite.svg#arrow");
+    width: 24px;
+    height: 12px;
+    top: 6px;
+    right: -50px;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      right: -58px;
+    }
+  }
 }
 
-.program-card__link::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/sprite.svg#arrow");
-  width: 32px;
-  height: 10px;
-  top: 6px;
-  right: -50px;
-
-  @media (min-width: $tablet-width) {
-    top: 8px;
-    right: -58px;
+.program-card__link:hover {
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite.svg#arrow");
+    width: 32px;
+    height: 10px;
+    top: 6px;
+    right: -50px;
   }
+}
+
+.program-card__link:active {
+  opacity: 0.5;
 }
