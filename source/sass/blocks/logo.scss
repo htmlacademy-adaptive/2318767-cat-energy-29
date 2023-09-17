@@ -1,4 +1,13 @@
-.logo--footer {
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo--image {
   @media (min-width: $tablet-width){
     width: 142px;
     height: 26px;

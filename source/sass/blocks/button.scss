@@ -10,6 +10,7 @@
   background-color: #68b738;
   padding: 11px;
   grid-area: button;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -39,5 +40,41 @@
   @media(min-width:$tablet-width) {
     font-size: 20px;
     line-height: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
+}
+
+
+.button:not([disabled]):hover {
+  background-color: #5EAA2F;
+}
+
+.button:focus {
+  background-color: #5EAA2F;
+}
+
+.button:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: none;
+}
+
+
+.button--secondary:not([disabled]):hover,
+.button--secondary:focus  {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  opacity: 0.3;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.button--secondary:disabled {
+  opacity: 0.5;
+  cursor: none;
 }

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="header">
@@ -30,52 +34,54 @@
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form__group">
-          <legend class="visually-hidden">Данные кота:</legend>
-          <label class="form__label">Имя:*
-            <input class="form__input" type="text" name="name" value="Барсик" required>
-          </label>
-          <label class="form__label">Вес (кг):*
-            <input class="form__input" type="number" name="weight" value="7" required>
-          </label>
-          <label class="form__label">Возраст (лет):
-            <input class="form__input" type="number" name="age" value="7" required>
-          </label>
-        </fieldset>
-        <fieldset class="form__group form__group--radio">
-          <legend class="visually-hidden">Программа</legend>
-          <label class="form__label form__label--radio">
-            <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-loss" checked>
-            <span class="form__control form__control--radio"></span>
-            <span class="form__name">Похудение</span>
-          </label>
-          <label class="form__label form__label--radio">
-            <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-gain">
-            <span class="form__control form__control--radio"></span>
-            <span class="form__name">Набор массы</span>
-          </label>
-          <label class="form__label form__label--radio">
-            <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="unknown">
-            <span class="form__control form__control--radio"></span>
-            <span class="form__name">Не знаю (нужен ваш совет)</span>
-          </label>
-        </fieldset>
+        <div class="form__wrapper">
+          <fieldset class="form__group">
+            <legend class="visually-hidden">Данные кота:</legend>
+            <label class="form__label">Имя:*
+              <input class="form__input" type="text" name="name" value="Барсик" required>
+            </label>
+            <label class="form__label">Вес (кг):*
+              <input class="form__input" type="number" name="weight" value="7" required>
+            </label>
+            <label class="form__label">Возраст (лет):
+              <input class="form__input" type="number" name="age" value="7" required>
+            </label>
+          </fieldset>
+          <fieldset class="form__group form__group--radio">
+            <legend class="visually-hidden">Программа</legend>
+            <label class="form__label form__label--radio">
+              <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-loss" checked>
+              <span class="form__control form__control--radio"></span>
+              <span class="form__name">Похудение</span>
+            </label>
+            <label class="form__label form__label--radio">
+              <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-gain">
+              <span class="form__control form__control--radio"></span>
+              <span class="form__name">Набор массы</span>
+            </label>
+            <label class="form__label form__label--radio">
+              <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="unknown">
+              <span class="form__control form__control--radio"></span>
+              <span class="form__name">Не знаю (нужен ваш совет)</span>
+            </label>
+          </fieldset>
+        </div>
         <fieldset class="form__group form__group--contacts">
           <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
           <label class="form__label form__label--contacts">E-mail:*
-            <input class="form__input form__input--contacts" type="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
+            <input class="form__input form__input--email" type="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__label form__label--contacts">Телефон:*
-            <input class="form__input form__input--contacts" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
         <fieldset class="form__group form__group--comments">
           <legend class="form__legend form__legend--comments">Комментарий</legend>
-          <input class="form__input form__input--comments" type="textarea" name="comment" placeholder="Расскажите обо всех повадках кота">
+          <textarea class="form__input form__input--comments" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__group form__group--add">
           <legend class="form__legend form__legend--add">Дополнительно</legend>
-          <div class="form__wrapper">
+          <div class="form__checkbox">
             <label class="form__label">
               <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
               <span class="form__control form__control--checkbox"></span>
@@ -117,8 +123,8 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo footer__item">
-        <img class="logo--footer" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
+      <a class="logo logo-footer footer__item">
+        <img class="logo--image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
       </a>
       <div class="social footer__item">
         <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка на Vkontakte"></a>

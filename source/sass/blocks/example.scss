@@ -169,10 +169,13 @@
   display: flex;
   justify-content: center;
   grid-column: 1 / 3;
+  max-width: 280px;
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
     z-index: 2;
+    max-width: 560px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,5 +211,80 @@
     padding: 0;
     z-index: 2;
     margin: 0;
+  }
+}
+
+.example__button {
+  position: absolute;
+  padding: 0;
+  border: none;
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  background-color: currentColor;
+  color: #666666;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  @media(min-width:$tablet-width) {
+    height: 512px;
+  }
+
+  @media(min-width:$desktop-width) {
+    left:auto;
+  }
+
+  &::before {
+    position: absolute;
+    content: " ";
+    mask: url("../img/sprite.svg#slider-button");
+    background-color: currentColor;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    width: 24px;
+    height: 18px;
+
+  }
+
+  &::after {
+    position: absolute;
+    content:"";
+    width: 40px;
+    height: 40px;
+    border: 2px solid currentColor;
+    border-radius: 20px;
+    color: inherit;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.example__button:hover,
+.example__button:focus {
+  color: #68b738;
+
+  &::after {
+    color:  #68b738;
+  }
+}
+
+.example__button:active {
+  color: #5EAA2F;
+  opacity: 0.6;
+}
+
+.example__image {
+  overflow: hidden;
+  object-fit: none;
+
+  &--fat {
+  object-position: left;
+  }
+
+  &--slim {
+    object-position: right;
   }
 }
