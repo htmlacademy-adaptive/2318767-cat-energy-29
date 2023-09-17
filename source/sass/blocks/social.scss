@@ -7,3 +7,54 @@
   box-sizing: border-box;
   align-items: center;
 }
+
+.social__link--vk {
+  &::after {
+    display: block;
+    content: "";
+    mask: url("../img/sprite.svg#icon-vk");
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+  }
+}
+
+.social__link:hover {
+  &::after {
+    background-color: #68b738;
+  }
+}
+
+.social__link:focus {
+  &::after {
+    background-color: #68b738;
+  }
+}
+
+.social__link:active {
+  &::after {
+    background-color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.social__link--youtube {
+  &::after {
+    display: block;
+    content: "";
+    mask: url("../img/sprite.svg#icon-youtube");
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+  }
+}
+
+.social__link--telegram {
+  &::after {
+    display: block;
+    content: "";
+    mask: url("../img/sprite.svg#icon-tg");
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+  }
+}

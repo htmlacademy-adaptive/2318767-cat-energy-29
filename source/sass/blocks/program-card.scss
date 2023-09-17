@@ -1,7 +1,7 @@
 .program-card {
   position: relative;
   background-color: #f2f2f2;
-  padding: 15px 33px 18px 20px;
+  padding: 15px 20px 18px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -16,8 +16,9 @@
 .program-card--slim::before {
   position: absolute;
   content: "";
-  background-image: url("../img/cat-sitting.svg");
+  background-image: url("../img/sprite.svg#cat-sitting");
   background-repeat: no-repeat;
+  background-size: 36px 50px;
   width: 50px;
   height: 53px;
   left: 29px;
@@ -44,8 +45,9 @@
 .program-card--pro::before {
   position: absolute;
   content: "";
-  background-image: url("../img/cat-walking.svg");
+  background-image: url("../img/sprite.svg#cat-walking");
   background-repeat: no-repeat;
+  background-size: 67px 28px;
   width: 67px;
   height: 50px;
   left: 13px;
@@ -165,7 +167,7 @@
 .program-card__link::after {
   position: absolute;
   content: "";
-  background-image: url("../../img/arrow.svg");
+  background-image: url("../img/sprite.svg#arrow");
   width: 32px;
   height: 10px;
   top: 6px;

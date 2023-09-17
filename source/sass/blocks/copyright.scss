@@ -1,17 +1,20 @@
-.copyright {
+.copyright__link {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 28px;
 
-  @media (min-width: $tablet-width) {
-   gap: 28px;
+  &::after {
+    display: inline-block;
+    content: "";
+    mask: url("../img/sprite.svg#icon-academy");
+    background-color: #666666;
+    width: 27px;
+    height: 34px;
   }
- }
-
- .copyright__link {
-   font-family: inherit;
-   font-size: 16px;
-   line-height: 19px;
-   color: #444444;
- }
+}

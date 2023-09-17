@@ -23,6 +23,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/cat-bag-desktop.jpg");
     grid-column: 2 / 3;
+    grid-row: 2 / 6;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-bag-desktop@2x.jpg");
@@ -54,7 +55,7 @@
 .gift::before {
   position: absolute;
   content: "";
-  background-image: url("../img/gift.svg");
+  background-image: url("../img/sprite.svg#gift");
   width: 78px;
   height: 80px;
   top: 58px;

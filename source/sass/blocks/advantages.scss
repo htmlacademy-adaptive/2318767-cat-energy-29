@@ -1,11 +1,11 @@
 .advantages {
-  padding: 10px 20px 25px;
+  padding: 10px 21px 25px;
 
   @media (min-width: $tablet-width) {
     padding-left: 31px;
     padding-right: 30px;
     padding-bottom: 18px;
-    border: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,7 +55,7 @@
   width: 60px;
   height: 60px;
   left: 0;
-  top: 0;
+  top: -2px;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -66,27 +66,31 @@
 }
 
 .advantages__item--healthy::before {
-  background: url("../img/leaf.svg"), #68b738;
+  background: url("../img/sprite.svg#leaf"), #68b738;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 25px 28px;
 }
 
 .advantages__item--powder::before {
-  background: url("../img/glass.svg"), #68b738;
+  background: url("../img/sprite.svg#glass"), #68b738;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 26px 29px;
 }
 
 .advantages__item--meal::before {
-  background: url("../img/tableware.svg"), #68b738;
+  background: url("../img/sprite.svg#tableware"), #68b738;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 25px 30px;
 }
 
 .advantages__item--month::before {
-  background: url("../img/clock.svg"), #68b738;
+  background: url("../img/sprite.svg#clock"), #68b738;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 26px 31px;
 }
 
 .advantages__item::after {

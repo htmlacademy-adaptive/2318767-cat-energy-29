@@ -1,55 +1,205 @@
-.product-add-card {
-  padding-top: 7px;
-  padding-bottom: 19px;
-  border-top: 1px solid #cdcdcd;
-  display: flex;
-  flex-direction: column;
+.product-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "image title"
+    "image feature"
+    "button button";
+  padding: 19px 20px 25px;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
-    display: grid;
-    grid-template-areas:
-      "title feature"
-      "button button";
-    padding: 26px 37px 28px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 163px 36px 39px;
+    background-color: #f2f2f2;
+    background-position-y: 20px;
+    width: min-content;
+    box-sizing: border-box;
+    min-width: 324px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 2;
+    min-width: 245px;
+    padding: 160px 40px 40px;
   }
+
 }
 
-.product-add-card:last-of-type {
-  border-bottom: 1px solid #cdcdcd;
-}
-
-.product-add-card__title {
+.product-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 20px;
   text-transform: uppercase;
   color: #222222;
-  margin-top: 6px;
-  margin-bottom: 13px;
+  padding-right: 64px;
+  margin-top: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    grid-area: title;
+    line-height: 120%;
+    padding-left: 47px;
+    padding-right: 47px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 105%;
+    padding-left: 12px;
+    padding-right: 6px;
+    margin-bottom: 24px;
   }
 }
 
-.product-add-card__feature {
-  font-size: 14px;
-  line-height: 14px;
+.product-card__link--image {
+  grid-area: image;
+  justify-self: center;
+  align-self: center;
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 295px;
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 310px;
+  }
+}
+
+.product-card__link--title {
+  grid-area: title;
+}
+
+.product-card__feature {
+  display: table-column-group;
+  font-size: 12px;
+  line-height: 16px;
   color: #444444;
-  margin-bottom: 15px;
+  grid-area: feature;
+  margin-bottom: 22px;
+
+  tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  tr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      gap: 16px;
+    }
+  }
+
+  td {
+    text-align: end;
+    padding: 0;
+  }
+
+  th {
+    text-align: start;
+    font-weight: 400;
+    padding: 0;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 125%;
-    grid-area: feature;
+    margin-bottom: 42px;
+  }
+}
+
+.product-card__note {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.product-card--more {
+  display: flex;
+  flex-direction: column;
+  padding-top: 78px;
+
+  .product-card__title {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: $tablet-width) {
+  }
+}
+
+.product-card--more::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 42px;
+  border: 1px solid #d3d3d3;
+  transform: rotate(-180deg);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    top: 82px;
+  }
+}
+
+.product-card--more::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40px;
+  border: 1px solid #d3d3d3;
+  transform: rotate(90deg);
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    top: 82px;
   }
 }

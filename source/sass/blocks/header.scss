@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-content: center;
   position: relative;
-  padding: 10px 20px 13px;
+  padding: 10px 20px 17px;
+  line-height: 100%;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -14,6 +15,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 54px 110px;
+    padding: 54px 110px 14px;
   }
 }
