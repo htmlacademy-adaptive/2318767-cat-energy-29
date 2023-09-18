@@ -6,7 +6,7 @@
   align-items: center;
   margin: 0 auto;
   width: 100vw;
-  max-width: $max-width-mobile;
+  max-width: 1220px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 54px 30px 14px 112px;
+    padding: 54px 110px 14px 110px;
     align-items: flex-start;
     max-width: $max-width-desktop;
     gap: 173px;
