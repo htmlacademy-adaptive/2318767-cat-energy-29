@@ -12,6 +12,7 @@
     display: flex;
     gap: 92px;
     max-width: $max-width-tablet;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
