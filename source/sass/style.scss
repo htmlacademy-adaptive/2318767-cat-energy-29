@@ -5,6 +5,10 @@
 // Миксины и переменные
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$max-width-mobile: 400px;
+$max-width-tablet: 900px;
+$max-width-desktop: 1300px;
+
 
 // Блоки
 @import "./blocks/header.scss";
@@ -26,4 +30,6 @@ $desktop-width: 1440px;
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/logo.scss";
-@import "./blocks/visually-hidden.scss"
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/error.scss";
+@import "./blocks/main.scss";

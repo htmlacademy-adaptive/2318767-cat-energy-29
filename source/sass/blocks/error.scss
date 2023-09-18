@@ -1,0 +1,13 @@
+.error.form__label {
+  .form__input {
+    outline: 2px solid #ff8282;
+  }
+}
+
+.error.form__label--email::after {
+  background-color: #ff8282;
+}
+
+.error.form__label--phone::after {
+  background-color: #ff8282;
+}

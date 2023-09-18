@@ -7,9 +7,20 @@
   opacity: 0.6;
 }
 
-.logo--image {
-  @media (min-width: $tablet-width){
+.logo__image {
+  @media (min-width: $tablet-width) {
     width: 142px;
     height: 26px;
+  }
+}
+
+.logo-letter {
+  padding-top: 3px;
+  width: 101px;
+  height: 18px;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

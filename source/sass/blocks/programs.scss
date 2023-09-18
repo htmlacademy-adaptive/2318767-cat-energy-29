@@ -3,12 +3,15 @@
   flex-direction: column;
   gap: 20px;
   padding: 10px 20px;
+  max-width: $max-width-mobile;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
     padding-left: 31px;
     padding-right: 30px;
     padding-top: 18px;
+    max-width: $max-width-tablet;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,5 +19,6 @@
     justify-content: space-between;
     padding-left: 110px;
     padding-right: 110px;
+    max-width: $max-width-desktop;
   }
 }

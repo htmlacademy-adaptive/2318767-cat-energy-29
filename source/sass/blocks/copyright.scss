@@ -1,5 +1,5 @@
 .copyright {
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 18px;
   }
 }
@@ -18,7 +18,7 @@
   &::after {
     display: inline-block;
     content: "";
-    mask: url("../img/sprite.svg#icon-academy");
+    mask: url("../img/stack.svg#html-academy");
     background-color: #666666;
     width: 27px;
     height: 34px;
@@ -28,7 +28,7 @@
 .copyright__link:hover,
 .copyright__link:focus {
   &::after {
-  background-color: #68B738;
+    background-color: #68b738;
   }
 }
 

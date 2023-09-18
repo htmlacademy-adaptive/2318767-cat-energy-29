@@ -22,6 +22,12 @@
 .button--secondary {
   background-color: #f2f2f2;
   color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+  }
 }
 
 .button--catalog {
@@ -37,7 +43,7 @@
   line-height: 20px;
   border: none;
 
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 0;
     padding-top: 13px;
@@ -47,15 +53,15 @@
 
 
 .button:not([disabled]):hover {
-  background-color: #5EAA2F;
+  background-color: #5eaa2f;
 }
 
 .button:focus {
-  background-color: #5EAA2F;
+  background-color: #5eaa2f;
 }
 
 .button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button:disabled {
@@ -65,7 +71,7 @@
 
 
 .button--secondary:not([disabled]):hover,
-.button--secondary:focus  {
+.button--secondary:focus {
   background-color: #ebebeb;
 }
 
