@@ -89,50 +89,24 @@
   }
 }
 
-.hero::before {
+.hero__image {
   position: absolute;
   content: "";
-  width: 280px;
-  height: 270px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   top: 167px;
-  background-image: url("../img/pack-mobile.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/pack-mobile@2x.png");
-    background-size: 100%;
-  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/pack-tablet.png");
-    width: 709px;
-    height: 609px;
     left: 0;
     top: 260px;
     z-index: -1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/pack-tablet@2x.png");
-      background-size: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/pack-desktop.png");
-    width: 552px;
-    height: 499px;
     left: 228px;
     top: 12px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/pack-desktop@2x.png");
-      background-size: 100%;
-    }
   }
 }
 

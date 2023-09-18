@@ -15,17 +15,19 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <a class="logo logo-letter">
-        <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
-      </a>
-      <nav class="main-nav main-nav--closed">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+        <a class="logo logo-letter">
+          <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs ">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -69,7 +71,7 @@
             <input class="form__input " type="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__label form__label--phone">Телефон:*
-            <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+            <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]" required>
           </label>
         </fieldset>
         <fieldset class="form__group form__group--comments">
@@ -109,7 +111,7 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="logo logo-footer footer__item">
+        <a class="logo footer__item">
           <img class="logo__image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
         </a>
         <div class="social footer__item">

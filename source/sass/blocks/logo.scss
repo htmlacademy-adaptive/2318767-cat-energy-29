@@ -13,14 +13,3 @@
     height: 26px;
   }
 }
-
-.logo-letter {
-  padding-top: 3px;
-  width: 101px;
-  height: 18px;
-  justify-self: center;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}

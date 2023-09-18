@@ -15,17 +15,19 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <a class="logo logo-letter">
-        <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
-      </a>
-      <nav class="main-nav main-nav--closed">
+      <div class="header__wrapper">
+        <a class="logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+        <a class="logo logo-letter">
+          <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -40,6 +42,14 @@
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/pack-desktop.webp 1x, img/pack-desktop@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/pack-tablet.webp 1x, img/pack-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="img/pack-mobile.webp 1x, img/pack-mobile@2x.webp 2x" width="280" height="270">
+          <source media="(min-width: 1440px)" srcset="img/pack-desktop.png 1x, img/pack-desktop@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/pack-tablet.png 1x, img/pack-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__image" src="img/pack-mobile.png" srcset="img/pack-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy">
+        </picture>
         <a class="button button--primary">Подобрать программу</a>
       </section>
       <section class="programs">
@@ -116,7 +126,7 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="logo logo-footer footer__item">
+        <a class="logo footer__item">
           <img class="logo__image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
         </a>
         <div class="social footer__item">

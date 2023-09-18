@@ -52,7 +52,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 16px;
-    max-width: 32%;
+    max-width: 30%;
     padding-right: 10px;
   }
 }
@@ -454,7 +454,7 @@
 }
 
 .form__input:focus + .form__label--radio::before {
-  border: 1px solid #bababa;
+  outline: 1px solid #bababa;
 }
 
 .form__input:active + .form__label--radio {

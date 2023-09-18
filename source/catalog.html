@@ -15,17 +15,19 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <a class="logo logo-letter">
-        <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
-      </a>
-      <nav class="main-nav main-nav--closed">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+        <a class="logo-letter">
+          <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -52,16 +54,18 @@
             <h3 class="product-card__title">Cat energy pro 500 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>500 г</td>
-              <td>Курица</td>
-              <td>700 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">500 г</td>
+                <td class="product-card__value">Курица</td>
+                <td class="product-card__value">700 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -80,16 +84,18 @@
             <h3 class="product-card__title">Cat energy pro 1000 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>1000 г</td>
-              <td>Курица</td>
-              <td>1000 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">1000 г</td>
+                <td class="product-card__value">Курица</td>
+                <td class="product-card__value">1000 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -106,16 +112,18 @@
             <h3 class="product-card__title">Cat energy pro 500 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>500 г</td>
-              <td>Рыба</td>
-              <td>700 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">500 г</td>
+                <td class="product-card__value">Рыба</td>
+                <td class="product-card__value">700 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -134,16 +142,18 @@
             <h3 class="product-card__title">Cat energy pro 1000 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>1000 г</td>
-              <td>Рыба</td>
-              <td>1000 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">1000 г</td>
+                <td class="product-card__value">Рыба</td>
+                <td class="product-card__value">1000 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -160,16 +170,18 @@
             <h3 class="product-card__title">Cat energy slim 500 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>500 г</td>
-              <td>Гречка</td>
-              <td>400 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">500 г</td>
+                <td class="product-card__value">Гречка</td>
+                <td class="product-card__value">400 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -188,16 +200,18 @@
             <h3 class="product-card__title">Cat energy slim 1000 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>1000 г</td>
-              <td>Гречка</td>
-              <td>700 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">1000 г</td>
+                <td class="product-card__value">Гречка</td>
+                <td class="product-card__value">700 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -214,16 +228,18 @@
             <h3 class="product-card__title">Cat energy slim 500 г</h3>
           </a>
           <table class="product-card__feature">
-            <tr>
-              <th>Масса</th>
-              <th>Вкус</th>
-              <th>Цена</th>
-            </tr>
-            <tr>
-              <td>500 г</td>
-              <td>Рис</td>
-              <td>500 ₽</td>
-            </tr>
+            <tbody class="product-card__table">
+              <tr class="product-card__line">
+                <th class="product-card__name">Масса</th>
+                <th class="product-card__name">Вкус</th>
+                <th class="product-card__name">Цена</th>
+              </tr>
+              <tr class="product-card__line">
+                <td class="product-card__value">500 г</td>
+                <td class="product-card__value">Рис</td>
+                <td class="product-card__value">500 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -240,14 +256,16 @@
             <h3 class="product-add-card__title">Сахарозаменитель</h3>
           </a>
           <table class="product-add-card__feature">
-            <tr>
-              <th class="visually-hidden">Упаковка</th>
-              <th class="visually-hidden">Цена</th>
-            </tr>
-            <tr>
-              <td>1 упаковка (100 г)</td>
-              <td>200 ₽</td>
-            </tr>
+            <tbody class="product-add-card__table">
+              <tr class="product-add-card__line">
+                <th class="visually-hidden">Упаковка</th>
+                <th class="visually-hidden">Цена</th>
+              </tr>
+              <tr class="product-add-card__line">
+                <td>1 упаковка (100 г)</td>
+                <td>200 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -256,14 +274,16 @@
             <h3 class="product-add-card__title">Питьевая вода</h3>
           </a>
           <table class="product-add-card__feature">
-            <tr>
-              <th class="visually-hidden">Упаковка</th>
-              <th class="visually-hidden">Цена</th>
-            </tr>
-            <tr>
-              <td>5 литров</td>
-              <td>50 ₽</td>
-            </tr>
+            <tbody class="product-add-card__table">
+              <tr class="product-add-card__line">
+                <th class="visually-hidden">Упаковка</th>
+                <th class="visually-hidden">Цена</th>
+              </tr>
+              <tr class="product-add-card__line">
+                <td class="product-add-card__value">5 литров</td>
+                <td class="product-add-card__value">50 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -272,14 +292,16 @@
             <h3 class="product-add-card__title">Молоко</h3>
           </a>
           <table class="product-add-card__feature">
-            <tr>
-              <th class="visually-hidden">Упаковка</th>
-              <th class="visually-hidden">Цена</th>
-            </tr>
-            <tr>
-              <td>1 литр</td>
-              <td>100 ₽</td>
-            </tr>
+            <tbody class="product-add-card__table">
+              <tr class="product-add-card__line">
+                <th class="visually-hidden">Упаковка</th>
+                <th class="visually-hidden">Цена</th>
+              </tr>
+              <tr class="product-add-card__line">
+                <td class="product-add-card__value">1 литр</td>
+                <td class="product-add-card__value">100 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -288,14 +310,16 @@
             <h3 class="product-add-card__title">Витамины</h3>
           </a>
           <table class="product-add-card__feature">
-            <tr>
-              <th class="visually-hidden">Упаковка</th>
-              <th class="visually-hidden">Цена</th>
-            </tr>
-            <tr>
-              <td>1 упаковка (30г)</td>
-              <td>300 ₽</td>
-            </tr>
+            <tbody class="product-add-card__table">
+              <tr class="product-add-card__line">
+                <th class="visually-hidden">Упаковка</th>
+                <th class="visually-hidden">Цена</th>
+              </tr>
+              <tr class="product-add-card__line">
+                <td class="product-add-card__value">1 упаковка (30г)</td>
+                <td class="product-add-card__value">300 ₽</td>
+              </tr>
+            </tbody>
           </table>
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
@@ -318,7 +342,7 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="logo logo-footer footer__item">
+        <a class="logo footer__item">
           <img class="logo__image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
         </a>
         <div class="social footer__item">

@@ -6,6 +6,9 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
   min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 img {
@@ -14,4 +17,8 @@ img {
 
 a {
   text-decoration: none;
+}
+
+html {
+  height: 100%;
 }

@@ -93,7 +93,7 @@
     grid-column: 1 / 4;
     z-index: 3;
     margin-top: 0;
-    padding-right: 185px;
+    padding-right: 187px;
     margin-bottom: 17px;
   }
 }
@@ -268,7 +268,7 @@
 
   &::before {
     position: absolute;
-    content: " ";
+    content: "";
     mask: url("../img/stack.svg#slider-button");
     background-color: currentColor;
     transform: translate(-50%, -50%);
