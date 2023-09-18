@@ -5,6 +5,7 @@
   padding: 10px 20px;
   max-width: $max-width-mobile;
   margin: 0 auto;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     gap: 30px;

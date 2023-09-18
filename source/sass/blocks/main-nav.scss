@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .main-nav__link {
@@ -82,7 +86,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     gap: 36px;
-    max-width: 60vw;
+    justify-content: flex-start;
   }
 }
 
@@ -145,5 +149,10 @@
 
   .main-nav--nojs .main-nav__wrapper {
     position: static;
+  }
+
+  .main-nav {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
   }
 }

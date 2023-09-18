@@ -13,5 +13,9 @@
     top: -2px;
     z-index: -2;
     left: calc(100vw / 2);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-desktop@2x.jpg");
+    }
   }
 }
