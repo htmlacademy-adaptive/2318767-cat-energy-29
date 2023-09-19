@@ -1,0 +1,21 @@
+.main {
+  overflow: hidden;
+}
+
+@media (min-width: $desktop-width) {
+  .main--index::before {
+    position: absolute;
+    content: "";
+    width: 50vw;
+    height: 694px;
+    background: url("../img/cat-desktop.jpg") #61a539;
+    background-repeat: no-repeat;
+    top: -2px;
+    z-index: -2;
+    right: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-desktop@2x.jpg");
+    }
+  }
+}

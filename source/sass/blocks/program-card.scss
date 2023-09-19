@@ -16,7 +16,7 @@
 .program-card--slim::before {
   position: absolute;
   content: "";
-  background-image: url("../img/sprite.svg#cat-sitting");
+  background-image: url("../img/stack.svg#cat-sitting");
   background-repeat: no-repeat;
   background-size: 36px 50px;
   width: 50px;
@@ -45,7 +45,7 @@
 .program-card--pro::before {
   position: absolute;
   content: "";
-  background-image: url("../img/sprite.svg#cat-walking");
+  background-image: url("../img/stack.svg#cat-walking");
   background-repeat: no-repeat;
   background-size: 67px 28px;
   width: 67px;
@@ -75,7 +75,7 @@
 .program-card::after {
   position: absolute;
   content: "";
-  background-color: #68B738;
+  background-color: #68b738;
   width: 50px;
   height: 50px;
   top: 23px;
@@ -115,6 +115,8 @@
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 18px;
+    width: 57%;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,6 +145,7 @@
     width: auto;
     padding-bottom: 0;
     margin-bottom: 27px;
+    padding-top: 4px;
   }
 }
 
@@ -157,6 +160,7 @@
   color: #000000;
   margin-top: 8px;
   margin-bottom: 18px;
+  margin-right: 60px;
 
 
   @media (min-width: $tablet-width) {
@@ -167,28 +171,26 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../img/sprite.svg#arrow");
+    mask: url("../img/stack.svg#arrow");
+    background-color: #000000;
     width: 24px;
     height: 12px;
-    top: 6px;
-    right: -50px;
+    bottom: 6px;
+    right: -40px;
 
     @media (min-width: $tablet-width) {
       top: 8px;
-      right: -58px;
+      right: -50px;
     }
   }
 }
 
 .program-card__link:hover {
   &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/sprite.svg#arrow");
     width: 32px;
-    height: 10px;
-    top: 6px;
-    right: -50px;
+    height: 14px;
+    top: 7px;
+    right: -56px;
   }
 }
 

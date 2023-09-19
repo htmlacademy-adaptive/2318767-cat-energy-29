@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .main-nav__link {
@@ -19,13 +23,13 @@
   padding-bottom: 24px;
 
   @media (max-width: 767px) {
-    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding-top: 18px;
+    padding-top: 13px;
     padding-bottom: 8px;
     font-weight: 400;
   }
@@ -38,16 +42,21 @@
   }
 }
 
+.main-nav__link:first-child {
+  @media (max-width: 767px) {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
 .main-nav__link--index {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
-
 }
 
 .main-nav__link--current.main-nav__link--index {
   @media (min-width: $desktop-width) {
-  border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
   }
 }
 
@@ -71,10 +80,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 36px;
+    gap: 33px;
+    justify-content: flex-start;
   }
 }
 
@@ -95,15 +107,24 @@
   }
 }
 
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
+  opacity: 0.5;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.2;
+}
+
 .main-nav--closed .main-nav__toggle {
-  background-image: url("../img/sprite.svg#burger-menu");
+  background-image: url("../img/stack.svg#burger-menu");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 18px;
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../img/sprite.svg#close");
+  background-image: url("../img/stack.svg#close");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -117,7 +138,7 @@
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    z-index: 5;
+    z-index: 7;
     top: 64px;
     right: 0;
   }
@@ -128,5 +149,10 @@
 
   .main-nav--nojs .main-nav__wrapper {
     position: static;
+  }
+
+  .main-nav {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
   }
 }

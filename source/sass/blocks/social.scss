@@ -7,13 +7,13 @@
   box-sizing: border-box;
   align-items: center;
 
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 24px;
     padding-top: 15px;
     gap: 26px;
   }
 
-  @media(min-width:$desktop-width){
+  @media (min-width: $desktop-width) {
     padding-top: 21px;
     padding-left: 23px;
   }
@@ -23,12 +23,12 @@
   &::after {
     display: block;
     content: "";
-    mask: url("../img/sprite.svg#icon-vk");
+    mask: url("../img/stack.svg#vk");
     background-color: #666666;
     width: 28px;
     height: 22px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 27px;
       height: 17px;
     }
@@ -57,12 +57,12 @@
   &::after {
     display: block;
     content: "";
-    mask: url("../img/sprite.svg#icon-youtube");
+    mask: url("../img/stack.svg#youtube");
     background-color: #666666;
     width: 28px;
     height: 22px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 24px;
       height: 19px;
     }
@@ -73,12 +73,12 @@
   &::after {
     display: block;
     content: "";
-    mask: url("../img/sprite.svg#icon-tg");
+    mask: url("../img/stack.svg#tg");
     background-color: #666666;
     width: 28px;
     height: 22px;
 
-    @media (min-width:$tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 20px;
       height: 17px;
       margin-left: 4px;

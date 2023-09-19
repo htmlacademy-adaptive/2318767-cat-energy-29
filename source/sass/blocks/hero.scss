@@ -1,51 +1,43 @@
 .hero {
   position: relative;
   color: #ffffff;
-  background-image: url("../img/cat-mobile.jpg"), linear-gradient(#07b607 80%, #ffffff 20%);
-  background-size: contain;
+  background-image: url("../img/cat-mobile.jpg");
+  background-size: 320px 302px;
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
+  max-width: $max-width-mobile;
+  margin: 0 auto;
+
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/cat-mobile@2x.jpg"), linear-gradient(#68b738 60%, #ffffff 40%);
-    background-size: 100%;
+    background-image: url("../img/cat-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 30px;
-    padding-left: 120px;
+    padding-left: 57px;
     padding-right: 75px;
+    padding-bottom: 14px;
     background-image: none;
     text-align: start;
     min-height: 810px;
     display: block;
+    max-width: $max-width-tablet;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 190px;
-    padding-bottom: 262px;
+    padding-left: 107px;
+    padding-bottom: 250px;
+    padding-top: 71px;
     min-height: auto;
-
+    max-width: $max-width-desktop;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .hero::after {
-    position: absolute;
-    content: "";
-    width: 720px;
-    height: 694px;
-    background-image: url("../img/cat-desktop.jpg"), linear-gradient(#68b738 80%, #ffffff 20%);
-    background-repeat: no-repeat;
-    top: -172px;
-    right: 0;
-    z-index: -2;
-  }
-}
 
 .hero__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -56,14 +48,15 @@
   color: #ffffff;
   margin-top: 17px;
   margin-bottom: 20px;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
     margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left: -2px;
+    margin-bottom: 43px;
+    margin-left: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,62 +75,55 @@
   color: #ffffff;
   margin-top: 5px;
   margin-bottom: 302px;
+  z-index: 4;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-bottom: 67px;
+    margin-bottom: 50px;
+    margin-left: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 40%;
+    margin-bottom: 40px;
   }
 }
 
-.hero::before {
+.hero__image {
   position: absolute;
   content: "";
-  width: 280px;
-  height: 270px;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   top: 167px;
-  background-image: url("../img/pack-mobile.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/pack-mobile@2x.png");
-    background-size: 100%;
-  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/pack-tablet.png");
-    width: 709px;
-    height: 609px;
     left: 0;
     top: 260px;
     z-index: -1;
-
-    @media (min-resolution: 2dppx) {
-    background-image: url("../img/pack-tablet@2x.png");
-    background-size: 100%;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/pack-desktop.png");
-    width: 552px;
-    height: 499px;
     left: 228px;
-    top: -30px;
+    top: 12px;
   }
+}
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/pack-desktop@2x.png");
-    background-size: 100%;
+.hero::after {
+  position: absolute;
+  content: "";
+  width: 200%;
+  background-color: #62a53b;
+  height: 302px;
+  right: 0;
+  left: -50%;
+  top: 0;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

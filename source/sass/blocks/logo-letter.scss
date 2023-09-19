@@ -1,0 +1,19 @@
+.logo-letter {
+  padding-top: 3px;
+  width: 101px;
+  height: 18px;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo-letter:hover,
+.logo-letter:focus {
+  opacity: 0.8;
+}
+
+.logo-letter:active {
+  opacity: 0.6;
+}

@@ -7,8 +7,8 @@
   opacity: 0.6;
 }
 
-.logo--image {
-  @media (min-width: $tablet-width){
+.logo__image {
+  @media (min-width: $tablet-width) {
     width: 142px;
     height: 26px;
   }

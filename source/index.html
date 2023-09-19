@@ -2,24 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Cat Energy</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <header class="header">
-      <a class="logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <nav class="main-nav main-nav--closed">
+      <div class="header__wrapper">
+        <a class="logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+        <a class="logo logo-letter">
+          <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -30,10 +37,18 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main main--index">
       <section class="hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/pack-desktop.webp 1x, img/pack-desktop@2x.webp 2x" width="552" height="499">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/pack-tablet.webp 1x, img/pack-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" srcset="img/pack-mobile.webp 1x, img/pack-mobile@2x.webp 2x" width="280" height="270">
+          <source media="(min-width: 1440px)" srcset="img/pack-desktop.png 1x, img/pack-desktop@2x.png 2x" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/pack-tablet.png 1x, img/pack-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__image" src="img/pack-mobile.png" srcset="img/pack-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy">
+        </picture>
         <a class="button button--primary">Подобрать программу</a>
       </section>
       <section class="programs">
@@ -54,12 +69,12 @@
         </article>
       </section>
       <section class="advantages">
-        <h2 class="advantages__title">Как это работает</h1>
+        <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--healthy">Функциональное питание содержит только полезные питательные вещества.</li>
           <li class="advantages__item advantages__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
           <li class="advantages__item advantages__item--meal">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="advantages__item advantages__item--month">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="advantages__item advantages__item--month">Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!</li>
         </ul>
       </section>
       <section class="example">
@@ -74,14 +89,19 @@
           <dt class="example__outline">затрачено времени</dt>
           <dd class="example__number">60 дней</dd>
         </dl>
-        <p class="example__summ">Затраты на питание: 15 000 РУБ.</p>
+        <p class="example__total">Затраты на питание:
+          <span class="example__summ">15 000 РУБ.</span>
+        </p>
         <div class="example__slider">
           <picture>
             <source type="image/webp" media="(min-width: 768px)" srcset="img/fat-cat-tablet-desktop.webp 1x, img/fat-cat-tablet-desktop@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" srcset="img/fat-cat-tablet-desktop.png 1x, img/fat-cat-tablet-desktop@2x.png 2x" width="560" height="512">
             <img class="example__image example__image--fat" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
           </picture>
           <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/slim-cat-tablet-desktop.webp 1x, img/slim-cat-tablet-desktop@2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/slim-cat-mobile.webp 1x, img/slim-cat-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" srcset="img/slim-cat-tablet-desktop.png 1x, img/slim-cat-tablet-desktop@2x.png 2x" width="560" height="512">
             <img class="example__image example__image--slim" src="img/slim-cat-mobile.png" srcset="img/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
           </picture>
@@ -104,16 +124,18 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo logo-footer footer__item">
-        <img class="logo--image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
-      </a>
-      <div class="social footer__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка на Vkontakte"></a>
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"  aria-label="Ссылка на Youtube"></a>
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Ссылка на Telegram"></a>
-      </div>
-      <div class="copyright footer__item">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a>
+      <div class="footer__wrapper">
+        <a class="logo footer__item">
+          <img class="logo__image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
+        </a>
+        <div class="social footer__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка на Vkontakte"></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"  aria-label="Ссылка на Youtube"></a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Ссылка на Telegram"></a>
+        </div>
+        <div class="copyright footer__item">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>

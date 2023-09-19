@@ -1,7 +1,7 @@
 .gift {
   position: relative;
   background-image: url("../img/cat-bag-mobile.jpg");
-  background-color: rgb(172, 164, 164);
+  background-color: #70b447;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -22,8 +22,10 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/cat-bag-desktop.jpg");
+    background-size: 245px 289px;
     grid-column: 2 / 3;
     grid-row: 2 / 6;
+    margin-top: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-bag-desktop@2x.jpg");
@@ -47,15 +49,21 @@
     padding-top: 71px;
     padding-bottom: 69px;
     padding-left: 0;
-    padding-right: 124px;
+    padding-right: 120px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 31px 0;
+    margin: 0;
+    text-align: center;
   }
 }
 
 .gift::before {
   position: absolute;
   content: "";
-  background-image: url("../img/sprite.svg#gift");
+  background-image: url("../img/stack.svg#gift");
   width: 78px;
   height: 80px;
   top: 58px;
@@ -69,6 +77,11 @@
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
-    right: 480px;
+    right: 473px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -4px;
+    top: -96px;
   }
 }

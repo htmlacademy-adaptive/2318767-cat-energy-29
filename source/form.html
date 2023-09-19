@@ -2,24 +2,31 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Cat Energy</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <header class="header">
-      <a class="logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-          <img src="img/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <nav class="main-nav main-nav--closed">
+      <div class="header__wrapper">
+        <a class="logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+        <a class="logo logo-letter">
+          <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--opened main-nav--nojs ">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -30,49 +37,40 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main">
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="form__wrapper">
           <fieldset class="form__group">
             <legend class="visually-hidden">Данные кота:</legend>
-            <label class="form__label">Имя:*
+            <label class="form__label"><span>Имя:*</span>
               <input class="form__input" type="text" name="name" value="Барсик" required>
             </label>
-            <label class="form__label">Вес (кг):*
+            <label class="form__label"><span>Вес (кг):*</span>
               <input class="form__input" type="number" name="weight" value="7" required>
             </label>
-            <label class="form__label">Возраст (лет):
+            <label class="form__label"><span>Возраст (лет):</span>
               <input class="form__input" type="number" name="age" value="7" required>
             </label>
           </fieldset>
           <fieldset class="form__group form__group--radio">
             <legend class="visually-hidden">Программа</legend>
-            <label class="form__label form__label--radio">
-              <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-loss" checked>
-              <span class="form__control form__control--radio"></span>
-              <span class="form__name">Похудение</span>
-            </label>
-            <label class="form__label form__label--radio">
-              <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="weight-gain">
-              <span class="form__control form__control--radio"></span>
-              <span class="form__name">Набор массы</span>
-            </label>
-            <label class="form__label form__label--radio">
-              <input class="form__input visually-hidden" type="radio" name="kind-of-programm" value="unknown">
-              <span class="form__control form__control--radio"></span>
-              <span class="form__name">Не знаю (нужен ваш совет)</span>
-            </label>
+            <input class="form__input visually-hidden" id="weight-loss" type="radio" name="kind-of-programm" value="weight-loss" checked>
+            <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
+            <input class="form__input visually-hidden" id="weight-gain" type="radio" name="kind-of-programm" value="weight-gain">
+            <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
+            <input class="form__input visually-hidden" id="unknown" type="radio" name="kind-of-programm" value="unknown">
+            <label class="form__label form__label--radio" for="unknown">Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
         <fieldset class="form__group form__group--contacts">
           <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-          <label class="form__label form__label--contacts">E-mail:*
-            <input class="form__input form__input--email" type="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
+          <label class="form__label form__label--email"><span>E-mail:*</span>
+            <input class="form__input " type="email" name="email-owner" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label class="form__label form__label--contacts">Телефон:*
-            <input class="form__input form__input--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          <label class="form__label form__label--phone"><span>Телефон:*</span>
+            <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]" required>
           </label>
         </fieldset>
         <fieldset class="form__group form__group--comments">
@@ -82,26 +80,14 @@
         <fieldset class="form__group form__group--add">
           <legend class="form__legend form__legend--add">Дополнительно</legend>
           <div class="form__checkbox">
-            <label class="form__label">
-              <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
-              <span class="form__control form__control--checkbox"></span>
-              <span class="form__name">Сахарозаменитель</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input visually-hidden" type="checkbox" name="water">
-              <span class="form__control form__control--checkbox"></span>
-              <span class="form__name">Питьевая вода</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input visually-hidden" type="checkbox" name="milk">
-              <span class="form__control form__control--checkbox"></span>
-              <span class="form__name">Молоко</span>
-            </label>
-            <label class="form__label">
-              <input class="form__input visually-hidden" type="checkbox" name="vitamins">
-              <span class="form__control form__control--checkbox"></span>
-              <span class="form__name">Витамины</span>
-            </label>
+            <input class="form__input visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+            <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            <input class="form__input visually-hidden" id="water" type="checkbox" name="water">
+            <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+            <input class="form__input visually-hidden" id="milk" type="checkbox" name="milk">
+            <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+            <input class="form__input visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+            <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
           </div>
           <button class="button button--form" type="submit">Отправить заявку</button>
           <p class="form__footnote">
@@ -123,16 +109,18 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo logo-footer footer__item">
-        <img class="logo--image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
-      </a>
-      <div class="social footer__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка на Vkontakte"></a>
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"  aria-label="Ссылка на Youtube"></a>
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Ссылка на Telegram"></a>
-      </div>
-      <div class="copyright footer__item">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a>
+      <div class="footer__wrapper">
+        <a class="logo footer__item">
+          <img class="logo__image" src="img/logo-letter.svg" width="128" height="24" alt="Буквенный логотип Cat Energy.">
+        </a>
+        <div class="social footer__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Ссылка на Vkontakte"></a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"  aria-label="Ссылка на Youtube"></a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Ссылка на Telegram"></a>
+        </div>
+        <div class="copyright footer__item">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <script src="js/script.js"></script>

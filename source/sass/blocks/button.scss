@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
     padding: 12px 28px;
   }
 }
@@ -22,6 +22,27 @@
 .button--secondary {
   background-color: #f2f2f2;
   color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+  }
+}
+
+.button--primary {
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 61px;
+    margin-right: 329px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+    margin-right: 911px;
+    margin-top: 54px;
+  }
 }
 
 .button--catalog {
@@ -29,6 +50,7 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 244px;
 }
 
 .button--form {
@@ -37,9 +59,9 @@
   line-height: 20px;
   border: none;
 
-  @media(min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 0;
+    line-height: 26px;
     padding-top: 13px;
     padding-bottom: 13px;
   }
@@ -47,15 +69,15 @@
 
 
 .button:not([disabled]):hover {
-  background-color: #5EAA2F;
+  background-color: #5eaa2f;
 }
 
 .button:focus {
-  background-color: #5EAA2F;
+  background-color: #5eaa2f;
 }
 
 .button:active {
-  color:rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button:disabled {
@@ -65,7 +87,7 @@
 
 
 .button--secondary:not([disabled]):hover,
-.button--secondary:focus  {
+.button--secondary:focus {
   background-color: #ebebeb;
 }
 

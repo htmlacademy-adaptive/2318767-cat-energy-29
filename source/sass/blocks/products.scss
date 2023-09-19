@@ -1,16 +1,22 @@
 .products {
+  max-width: $max-width-mobile;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     row-gap: 141px;
     column-gap: 60px;
-    padding: 20px 30px;
+    padding: 24px 30px 12px;
+    justify-content: center;
+    max-width: $max-width-tablet;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 20px 110px 25px;
+    padding: 26px 110px 2px;
     column-gap: 80px;
     row-gap: 143px;
+    max-width: $max-width-desktop;
   }
 }
 
@@ -38,5 +44,7 @@
 
   @media (min-width: $desktop-width) {
 
+    margin-top: 34px;
+    margin-bottom: 24px;
   }
 }

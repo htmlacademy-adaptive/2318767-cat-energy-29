@@ -15,20 +15,17 @@
     border: none;
     display: flex;
     flex-direction: column;
-    width: max-content;
-    padding: 163px 36px 39px;
+    justify-content: space-between;
+    padding: 162px 36px 38px;
     background-color: #f2f2f2;
-    background-position-y: 20px;
-    width: min-content;
     box-sizing: border-box;
-    min-width: 324px;
+    width: 324px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 245px;
-    padding: 160px 40px 40px;
+    width: 245px;
+    padding: 158px 40px 40px;
   }
-
 }
 
 .product-card__title {
@@ -49,14 +46,14 @@
     padding-left: 47px;
     padding-right: 47px;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 105%;
     padding-left: 12px;
     padding-right: 6px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
   }
 }
 
@@ -68,11 +65,11 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 295px;
+    top: -30px;
   }
 
-  @media (min-width: $tablet-width) {
-    bottom: 310px;
+  @media (min-width: $desktop-width) {
+    top: -30px;
   }
 }
 
@@ -88,35 +85,51 @@
   grid-area: feature;
   margin-bottom: 22px;
 
-  tbody {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  tr {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: $tablet-width) {
-      gap: 16px;
-    }
-  }
-
-  td {
-    text-align: end;
-    padding: 0;
-  }
-
-  th {
-    text-align: start;
-    font-weight: 400;
-    padding: 0;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
+  }
+}
+
+.product-card__table {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: baseline;
+  }
+}
+
+.product-card__line {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.product-card__value {
+  text-align: end;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 9px;
+    padding-top: 7px;
+  }
+}
+
+.product-card__name {
+  text-align: start;
+  font-weight: 400;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 9px;
+    padding-top: 7px;
   }
 }
 
@@ -130,16 +143,35 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 87px;
+    margin-bottom: 84px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: -1px;
+    margin-left: -2px;
+    margin-bottom: 86px;
   }
 }
 
 .product-card--more {
   display: flex;
   flex-direction: column;
-  padding-top: 78px;
+  padding-top: 74px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 162px;
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    padding-bottom: 40px;
+  }
 
   .product-card__title {
     padding: 0;
@@ -147,9 +179,10 @@
     margin-bottom: 8px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 23px;
+      margin-bottom: 22px;
       padding-left: 36px;
       padding-right: 36px;
+      line-height: 22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -161,27 +194,29 @@
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
   }
-
-  @media (min-width: $tablet-width) {
-  }
 }
 
 .product-card--more::before {
   position: absolute;
   content: "";
   width: 30px;
-  height: 0px;
+  height: 0;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 42px;
+  top: 36px;
   border: 1px solid #d3d3d3;
   transform: rotate(-180deg);
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 60px;
     top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 80px;
   }
 }
 
@@ -189,14 +224,15 @@
   position: absolute;
   content: "";
   width: 30px;
-  height: 0px;
+  height: 0;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 40px;
+  top: 36px;
   border: 1px solid #d3d3d3;
   transform: rotate(90deg);
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 60px;
