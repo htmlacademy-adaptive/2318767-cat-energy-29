@@ -18,7 +18,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     display: grid;
-    min-width: 895px;
+    width: 895px;
     grid-template-areas: "title feature button";
     grid-template-columns: 321px 329px auto;
     align-items: center;

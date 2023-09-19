@@ -112,6 +112,7 @@
     background-size: 1440px 400px;
     grid-row: 1 / 4;
     grid-column: 1 / 4;
+    height: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-desktop@2x.jpg");

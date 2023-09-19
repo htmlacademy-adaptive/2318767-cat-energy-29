@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 107px;
-    padding-bottom: 262px;
+    padding-bottom: 250px;
     padding-top: 71px;
     min-height: auto;
     max-width: $max-width-desktop;
@@ -87,6 +87,7 @@
 
   @media (min-width: $desktop-width) {
     width: 40%;
+    margin-bottom: 40px;
   }
 }
 

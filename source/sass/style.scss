@@ -1,6 +1,8 @@
 //  Базовые стили
 @import "./base/fonts.scss";
 @import "./base/base.scss";
+@import "./base/visually-hidden.scss";
+@import "./base/error.scss";
 
 // Миксины и переменные
 $tablet-width: 768px;
@@ -31,6 +33,4 @@ $max-width-desktop: 1220px;
 @import "./blocks/social.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/logo-letter.scss";
-@import "./blocks/visually-hidden.scss";
-@import "./blocks/error.scss";
 @import "./blocks/main.scss";

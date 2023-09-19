@@ -65,11 +65,11 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 302px;
+    top: -30px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 314px;
+    top: -30px;
   }
 }
 

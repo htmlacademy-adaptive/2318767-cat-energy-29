@@ -14,7 +14,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
     padding: 12px 28px;
   }
 }
@@ -31,7 +31,15 @@
 }
 
 .button--primary {
-  margin-left: 63px;
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+    margin-right: 911px;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .button--catalog {
@@ -39,6 +47,7 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 244px;
 }
 
 .button--form {
@@ -49,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 0;
+    line-height: 26px;
     padding-top: 13px;
     padding-bottom: 13px;
   }

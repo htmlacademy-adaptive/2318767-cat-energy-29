@@ -16,6 +16,7 @@
     column-gap: 41px;
     max-width: $max-width-desktop;
     margin: 0 auto;
+    grid-template-columns: auto 245px;
   }
 }
 
@@ -46,7 +47,6 @@
   @media (min-width: $desktop-width) {
     margin-left: -41px;
     padding-left: 40px;
-    width: max-content;
     margin-bottom: 84px;
   }
 }

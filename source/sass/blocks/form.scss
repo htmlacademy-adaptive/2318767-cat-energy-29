@@ -215,7 +215,7 @@
   padding: 11px 0 9px 20px;
   min-height: 24px;
   margin-top: 0;
-  flex: 1;
+  flex-shrink: 0;
   margin-left: 0;
   margin-right: 0;
   border: none;
@@ -361,7 +361,7 @@
 .form__label {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
   margin-bottom: 16px;
   cursor: pointer;
