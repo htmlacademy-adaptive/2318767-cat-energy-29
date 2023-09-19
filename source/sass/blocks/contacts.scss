@@ -92,6 +92,7 @@
   background-size: 320px 362px;
   background-repeat: no-repeat;
   width: 100%;
+  min-height: 440px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
