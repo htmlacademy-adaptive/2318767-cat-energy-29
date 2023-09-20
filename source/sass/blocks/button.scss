@@ -32,8 +32,9 @@
 
 .button--primary {
 
+  display: block;
+
   @media (min-width: $tablet-width) {
-    display: block;
     margin-left: 61px;
     margin-right: 329px;
   }
