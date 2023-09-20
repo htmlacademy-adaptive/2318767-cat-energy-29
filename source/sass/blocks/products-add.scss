@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 48px 31px 58px;
+    padding: 52px 31px 58px;
     max-width: $max-width-tablet;
     margin: 0 auto;
   }
@@ -61,7 +61,7 @@
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    top: 75px;
+    top: 81px;
   }
 
   @media (min-width: $desktop-width) {
