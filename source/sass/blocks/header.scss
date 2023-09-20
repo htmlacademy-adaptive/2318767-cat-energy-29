@@ -10,16 +10,17 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 92px;
+    gap: 206px;
     max-width: $max-width-tablet;
-    padding-top: 25px;
+    padding-top: 22px;
+    padding-bottom: 3px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 54px 110px 14px 110px;
     align-items: flex-start;
     max-width: 1220px;
-    gap: 263px;
+    gap: 266px;
   }
 }
 

@@ -2,7 +2,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
@@ -32,8 +32,9 @@
 
 .button--primary {
 
+  display: block;
+
   @media (min-width: $tablet-width) {
-    display: block;
     margin-left: 61px;
     margin-right: 329px;
   }
@@ -50,7 +51,7 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  max-width: 244px;
+  max-width: 644px;
 }
 
 .button--form {

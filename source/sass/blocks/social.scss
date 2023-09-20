@@ -8,14 +8,14 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 24px;
-    padding-top: 15px;
+    padding-left: 38px;
+    padding-top: 25px;
     gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 21px;
-    padding-left: 23px;
+    padding-left: 39px;
   }
 }
 

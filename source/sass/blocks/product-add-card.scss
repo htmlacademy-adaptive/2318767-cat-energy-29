@@ -1,5 +1,5 @@
 .product-add-card {
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 19px;
   border-top: 1px solid #cdcdcd;
   display: flex;
@@ -12,7 +12,7 @@
     grid-template-areas:
       "title feature"
       "button button";
-    padding: 26px 37px 28px;
+    padding: 26px 38px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,11 +43,12 @@
   text-transform: uppercase;
   color: #222222;
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     grid-area: title;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
