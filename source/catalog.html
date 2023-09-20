@@ -19,11 +19,12 @@
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            <img class="logo__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-        </a>
-        <a class="logo-letter">
-          <img src="img/logo-letter.svg" width="101" height="18" alt="Буквенный логотип Cat Energy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
+            <img class="logo__logo-letter" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -69,7 +70,7 @@
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <a class="product-card__link product-card__link--image" href="#">
+          <a class="product-card__link product-card__link--image product-card__link--imagebig" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/pack-chicken-1000-desktop.webp 1x, img/catalog/pack-chicken-1000-desktop@2x.webp 2x" width="172" height="196">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/pack-chicken-1000-tablet.webp 1x, img/catalog/pack-chicken-1000-tablet@2x.webp 2x" width="168" height="200">
@@ -127,7 +128,7 @@
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <a class="product-card__link product-card__link--image" href="#">
+          <a class="product-card__link product-card__link--image product-card__link--imagebig" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/pack-fish-1000-desktop.webp 1x, img/catalog/pack-fish-1000-desktop@2x.webp 2x" width="172" height="196">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/pack-fish-1000-tablet.webp 1x, img/catalog/pack-fish-1000-tablet@2x.webp 2x" width="168" height="200">
@@ -185,7 +186,7 @@
           <a class="button button--catalog" href="#">Заказать</a>
         </article>
         <article class="product-card">
-          <a class="product-card__link product-card__link--image" href="#">
+          <a class="product-card__link product-card__link--image product-card__link--imagebig" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/pack-wheat-1000-desktop.webp 1x, img/catalog/pack-wheat-1000-desktop@2x.webp 2x" width="172" height="196">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/pack-wheat-1000-tablet.webp 1x, img/catalog/pack-wheat-1000-tablet@2x.webp 2x" width="168" height="200">
@@ -315,7 +316,7 @@
                 <th class="visually-hidden">Цена</th>
               </tr>
               <tr class="product-add-card__line">
-                <td class="product-add-card__value">1 упаковка (30г)</td>
+                <td class="product-add-card__value">1 упаковка (30 г)</td>
                 <td class="product-add-card__value">300 ₽</td>
               </tr>
             </tbody>

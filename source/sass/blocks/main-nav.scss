@@ -85,7 +85,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 33px;
+    gap: 34px;
     justify-content: flex-start;
   }
 }
@@ -94,8 +94,8 @@
   position: absolute;
   cursor: pointer;
   content: "";
-  top: 21px;
-  right: 17px;
+  top: 16px;
+  right: 23px;
   width: 30px;
   height: 20px;
   border: none;

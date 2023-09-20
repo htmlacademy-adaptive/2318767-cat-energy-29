@@ -13,14 +13,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 28px;
+  gap: 19px;
 
   &::after {
     display: inline-block;
     content: "";
     mask: url("../img/stack.svg#html-academy");
     background-color: #666666;
-    width: 27px;
+    width: 30px;
     height: 34px;
   }
 }

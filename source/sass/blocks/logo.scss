@@ -9,7 +9,45 @@
 
 .logo__image {
   @media (min-width: $tablet-width) {
-    width: 142px;
-    height: 26px;
+    width: 128px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    height: 24px;
+  }
+}
+
+.logo__logo-image {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.logo__logo-letter {
+  position: absolute;
+  left: 49%;
+  top: 18px;
+  transform: translate(-50%, 0);
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    left: 101px;
+    top: 47px;
+    transform: translate(0, -50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 194px;
+    top: 80px;
   }
 }
